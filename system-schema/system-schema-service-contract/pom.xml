@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>system-schema</artifactId>
+        <groupId>monkey.do</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>system-schema-service-contract</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>monkey.do</groupId>
+            <artifactId>system-schema-data-model</artifactId>
+            <version>${schema-modules-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>monkey.do</groupId>
+            <artifactId>system-schema-common</artifactId>
+            <version>${schema-modules-version}</version>
+        </dependency>
+        <!-- spring security 安全认证 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

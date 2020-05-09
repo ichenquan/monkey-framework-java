@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>system-organization</artifactId>
+        <groupId>monkey.do</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <name>system-organization-service-provider</name>
+    <artifactId>system-organization-service-provider</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>monkey.do</groupId>
+            <artifactId>common</artifactId>
+            <version>${monkey.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>monkey.do</groupId>
+            <artifactId>data-bus-client</artifactId>
+            <version>${monkey.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>monkey.do</groupId>
+            <artifactId>service-bus-server</artifactId>
+            <version>${monkey.framework.version}</version>
+        </dependency>
+        <!--spring web-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>monkey.do</groupId>
+            <artifactId>system-organization-data-mapper</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>monkey.do</groupId>
+            <artifactId>system-organization-service-contract</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+</project>
